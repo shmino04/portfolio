@@ -1,0 +1,79 @@
+
+
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 20px;
+
+}
+
+.card{
+    width: 250px;
+    padding: 20px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px blue, -5px -5px 10px gold;
+
+
+}
+
+.h{
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20pt;
+}
+
+
+.input{
+
+    display: flex;
+    margin-top: 10px;
+    padding: 5px;
+    
+}
+
+.txt{
+    padding: 5px;
+}
+
+.gender-container {
+    display: flex;
+    flex-direction: column; 
+    padding: 10px;
+    gap: 10px; 
+}
+
+.course-container{
+
+    margin-top: 20px;
+
+}
+
+.cb{
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+}
+
+.butcon{
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+
+#but{
+    font-size: 13pt;
+    width: 100px;
+    height: auto;
+}
+
+#but:active {
+    background-color: blue;
+    color: white;
+}
+
+
+

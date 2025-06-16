@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="op.js"></script>
+
+    <title></title>
+</head>
+<body>
+
+    <div class="card">
+
+    <h2 class="h"> Registration </h2>
+    
+
+    <span class="input">First Name:</span> <input type="text" id="fname" class="txt">
+	<span class="input">Last Name:</span> <input type="text" id="lname" class="txt">
+    <span class="input">E-Mail:</span> <input type="email" id="email" class="txt">
+    <span class="input">Password:</span> <input type="password" id="pass" class="txt">
+	<span class="input">Phone Number:</span> <input type="number" id="phone" class="txt">
+
+
+    <div class="gender-container">
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+    </div>
+
+    <span class="input">Date of Birth:</span> <input type="date" id="bday" class="txt">
+
+    <div class="course-container">
+
+        <label for="course">Course/Program:</label>
+
+        <select id="course" name="course">
+
+            <option value="BSIT">BSIT</option>
+            <option value="BSP">BSP</option>
+            <option value="BSN">BSN</option>
+            <option value="BSA">BSA</option>
+            <option value="BSBA">BSBA</option>
+            <option value="STEM">STEM</option>
+            <option value="HUMSS">HUMSS</option>
+            <option value="ABM">ABM</option>
+            <option value="TVL">TVL</option>
+
+        </select>
+
+    </div>
+
+    <label class="cb"> Accept Terms and Condition <input class="cb"  type="checkbox" name="agree" value="yes"></label>
+
+    
+
+    <div class="butcon">
+
+	<button id="but"  type="button" onclick="MyFunction()">Confirm</button>
+    
+    </div>
+
+
+</div>
+
+
+</body>
+</html>
