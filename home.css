@@ -1,0 +1,565 @@
+body {
+    margin: 0;
+    background-color: #f0ecf1;
+    font-family: sans-serif;
+}
+
+.header {
+    position: fixed; 
+    width: 100%;
+    background: #f0ecf1; 
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    z-index: 1000; 
+}
+
+
+.navbar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: left;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.navbarbut {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.navbarbut:focus {
+    background-color: #27265b;
+    color: white;
+    outline: none;
+}
+
+.navbarbut.active {
+    background-color: #27265b; 
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+    
+}
+
+
+
+
+.hamburger {
+    display: none;
+    font-size: 250%;
+    background: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 10000;
+    border: none;
+    cursor: pointer;
+    color: black;
+
+}
+
+.nav-panel {
+    display: none;
+    margin: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #27265b;
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.navbarbut2 {
+    text-decoration: none;
+    color: #f4b6db;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+.navbarbut2:focus {
+    background-color: #f4b6db;
+    color: white;
+    outline: none;
+}
+
+.nav-panel.show {
+    display: flex;
+    
+}
+
+
+
+.title{
+    margin-left: 50%;
+    font-family: 'Ramillas Medium';
+    font-size: 25px;
+    color: #4d027a;
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+      padding-top: 120px;
+}
+
+.intro{
+    flex: 45%;
+    padding: 20px;
+}
+
+.intro-card
+{
+    background: #f4b6db;
+    width: 80%;
+    height: 330px;
+    margin-left: 100px;
+    padding: 20px;
+    border-radius: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+
+@keyframes glow {
+    0% { filter: drop-shadow(0px 0px 5px  #27265b); }
+    50% { filter: drop-shadow(0px 0px 15px  #27265b); }
+    100% { filter: drop-shadow(0px 0px 5px  #27265b); }
+}
+
+.intro-card:hover {
+    animation: glow 1s infinite alternate;
+}
+
+#gab{
+    text-align: center;
+    font-family: 'TAN Nimbus';
+    color: #27265b;
+    font-size: 30px;
+}
+
+#des{
+    color: #27265b;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.photo1{
+    flex: 45%;
+    padding: 20px;
+}
+
+#img1{
+    width: 260px;
+    margin-left: 140px;
+
+}
+
+#image-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+
+#panel-img {
+    width: 30%;
+    max-width: 600px;
+    transition: transform 0.3s ease;
+}
+
+
+
+
+.aboutme{
+    display: flex;
+    margin-top: 100px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+.aboutme:hover {
+    
+    transform: scale(1.05); 
+}
+
+.card1 {
+    background-color: #27265b;
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    border-radius: 50px;
+    margin: 0 auto; 
+    
+}
+
+#hr1{
+    display: flex;
+    border: none; 
+    height: 3px;  
+    background-color: #f4b6db; 
+    width: 20%;
+}
+
+#meee{
+    display: flex;
+    color: #f4b6db;
+    font-size: 250%;
+    margin-left: 40px;
+}
+
+.card2 {
+    background-color: #f0ecf1;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    border-radius: 50px;
+    margin: 0 auto; 
+    
+}
+
+.profile{
+    display: flex;
+    align-items: center; 
+}
+
+.dp{
+    display: flex;
+    width: 100px;
+    padding: 20px;
+}
+
+.topic{
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+
+.highlight { 
+    display: flex; 
+    gap: 20px; 
+}
+
+
+.but {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+
+}
+
+
+.but img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+
+.selected {
+    box-shadow: 0px 4px 15px #333; 
+}
+
+.info {
+    display: none; 
+    background-color: #f0ecf1;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.bullet-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+}
+
+#hr2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 2px;
+    display: flex;
+    border: none; 
+    background-color: #a6a6a6;
+}
+
+.skill {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 50px; 
+    margin-top: 50px;
+    
+}
+
+
+.img-ide{
+   width: 190px;
+   background-color: white;
+   object-fit: cover; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;  
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+
+}
+
+.move-left {
+    transform: translateX(50%);
+    opacity: 0;
+}
+
+.move-right {
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+
+.img-ide.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+#p{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    font-family: 'TAN Nimbus';
+    color: #27265b;
+    font-size: 50px;
+}
+
+.project {
+    display: flex; 
+    justify-content: center; 
+    gap: 100px; 
+}
+
+.pro {
+    text-align: center; 
+}
+
+.img-pro {
+    width: 200px; 
+    height: auto;
+    transition: box-shadow 0.3s ease-in-out; 
+
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.img-pro:hover {
+    animation: shake 0.9s ease-in-out infinite;
+}
+
+.img-text {
+    font-size: 25px;
+    color: #333;
+    font-family: sans-serif;
+    
+}
+
+.img-pro.selected {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); 
+    border-radius: 10px; 
+}
+
+.c { 
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    gap: 20px; 
+    padding-top: 100px;
+      margin-top: 100px;
+    margin-bottom: 70px;
+    font-family: 'TAN Nimbus';
+    color: #27265b;
+    font-size: 50px;
+
+
+}
+
+.contact { 
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    gap: 40px; 
+    padding-bottom: 100px;
+
+
+}
+
+.butt {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: white;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+
+}
+
+.butt img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+
+.pick {
+    box-shadow: 0px 4px 15px #333; 
+}
+
+.footer{
+    background: #27265b;
+    padding:5px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    max-height: 90px; 
+}
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+    .hamburger {
+        display: block;
+    }
+
+    .navbar{
+        display: none;
+    }   
+
+    .title{
+        margin-left: 40%;
+    }
+    
+    .row, .project{   
+      flex-direction: column;
+    }
+
+    .intro-card{
+        margin: auto;   
+        height: auto;
+    }  
+
+    #meee{
+        font-size: 170%;
+    }
+    
+    #img1{
+
+       display: block;
+       margin: auto;
+    }
+
+    .dp{
+        width: 80px;
+    }
+
+    .topic{
+        font-size: 20px;
+    }
+    .but, .but img{
+        width: 50px; 
+        height: 50px; 
+        margin-left: 5px;
+    }
+    .highlight { 
+       gap: 5px;
+        
+    }
+
+    .skill{
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .img-ide{
+        width: 100px;
+    }
+
+    #panel-img {
+         width: 70%;
+   }
+
+   .butt {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+
+}
+
+.butt img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+
+}
+
+
+
+
+@font-face {
+    font-family: 'TAN Nimbus';
+    src: url('font/TAN-NIMBUS.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Ramillas Medium';
+    src: url('font/TT\ Ramillas\ Trial\ Medium.ttf') format('truetype');
+}
