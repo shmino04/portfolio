@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <button class="hamburger">&#9776;</button>
+
+     <div class="nav-panel">
+        <a href="#home" class="navbarbut2">Home</a>
+        <a href="#aboutme" class="navbarbut2">About Me</a>
+        <a href="#p" class="navbarbut2">Project</a>
+        <a href="#phone" class="navbarbut2">Contact</a>
+    </div>
+
+    <div class="header">
+
+        <div class="navbar">
+            <a href="#home" class="navbarbut">Home</a>
+            <a href="#aboutme" class="navbarbut">About Me</a>
+            <a href="#p" class="navbarbut">Project</a>
+            <a href="#phone" class="navbarbut">Contact</a>
+        </div>
+
+    
+        <div class="title">
+
+            <p> Portfolio </p>
+
+        </div>
+
+    </div>
+
+    <div class="home" id="home">
+
+        <div class="intro">
+
+            <div class="intro-card">
+
+                <h2 id="gab"> Hi, I'm Gab!</h2>
+
+                <p id="des"> I'm an IT student at NU MOA with a passion for exploring all aspects of programming. From web development to software engineering, I enjoy learning different technologies, solving problems, and understanding how code shapes the digital world. My journey is all about discovering new concepts, building projects, and growing my skills across various programming languages and fields. </p>
+
+            </div> 
+
+        </div>
+
+        <div class="photo1">
+
+            <img id="img1" src="img/img1.png" onclick="showPanel()">
+
+        </div>
+
+        <div id="image-panel" class="hidden" onclick="hidePanel()">
+            <img id="panel-img" src="img/img1.png">
+        </div>
+
+        </div>
+
+
+    <div class="aboutme" id="aboutme">
+
+        <div class="card1">
+
+            <hr id="hr1">
+            <h2 id="meee"> About Me</h2>
+
+        <div class="card2">
+
+        <div>
+
+            <div class="profile">
+                <div>
+                    <img class="dp" src="img/img4.png">
+                </div>
+
+            <div class="aa">
+                <p >Gabriela M. Estravo</p>
+                <p style="color: #545454;"> 11.30.2004</p>
+            </div>
+        </div>
+        
+    <h1 class="topic"> Educational Background </h1>
+
+        <div id="info-container">
+
+            <div id="pnms" class="info">
+
+                <div class="bullet-list">
+
+                    <div class="bullet">• 2011 - 2017</div>
+                    <div class="bullet">• Elementary</div>
+                    <div class="bullet">• Paete Nativity Montessori School</div>
+
+                </div>
+            </div>
+
+            <div id="liceo" class="info">
+
+                <div class="bullet-list">
+
+                    <div class="bullet">• 2017 - 2021</div>
+                    <div class="bullet">• Junior Highschool</div>
+                    <div class="bullet">• Liceo de Paete</div>
+
+                </div>
+            </div>
+
+            <div id="psbc" class="info">
+
+                <div class="bullet-list">
+
+                    <div class="bullet">• 2021 - 2023</div>
+                    <div class="bullet">• STEM</div>
+                    <div class="bullet">• Senior Highschool</div>
+                    <div class="bullet">• Paete Science and Business College</div>
+
+                </div>
+            </div>
+
+            <div id="nu-moa" class="info">
+
+                <div class="bullet-list">
+
+                    <div class="bullet">• 2023 - Present</div>
+                    <div class="bullet">• BSIT-MWA</div>
+                    <div class="bullet">• College</div>
+                    <div class="bullet">• NU MOA</div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="highlight">
+
+            <button class="but" onclick="showInfo('pnms')"><img src="img/img-school1.jpg"> </button>
+            <button class="but" onclick="showInfo('liceo')"><img src="img/img-school2.jpg"></button>
+            <button class="but" onclick="showInfo('psbc')"><img src="img/img-school3.png"></button>
+            <button class="but" onclick="showInfo('nu-moa')"><img src="img/img-school4.png"></button>
+            <button class="but" onclick="hideInfo()"><img src="img/img3.png"></button>
+
+        </div>
+
+        </div>
+
+        <hr id="hr2">
+
+
+
+        <div>
+
+        </div>
+
+        
+        <div class="profile">
+                <div>
+                    <img class="dp" src="img/img2.png">
+                </div>
+
+            <div class="aa">
+                <p >Gabriela M. Estravo</p>
+                <p style="color: #545454;"> 11.30.2004</p>
+            </div>
+        </div>
+
+        <h1 class="topic"> IDEs & Programming Language </h1>
+
+        <div class="skill">
+            <img class="img-ide move-left" src="img/img-ide1.png">
+            <img class="img-ide middle-img" src="img/img-ide2.png">
+            <img class="img-ide move-right" src="img/img-ide3.png">
+        </div>
+
+        </div>
+        </div>
+
+    </div>
+
+
+    <h1 id="p"> Project </h1>
+
+    <div class="project" >
+
+        <div class="pro">
+        <img src="img/img5.png" id="pro1" class="img-pro">
+        <p class="img-text">Project 1</p>
+    </div>
+    <div class="pro">
+        <img src="img/img5.png" id="pro2" class="img-pro">
+        <p class="img-text">Project 2</p>
+    </div>
+    <div class="pro">
+        <img src="img/img5.png" id="pro3" class="img-pro">
+        <p class="img-text">Project 3</p>
+    </div>
+
+    </div>
+
+
+    
+         <div >
+
+            <div class="c">
+                <p class="co">Contact</p>
+            </div>
+
+            <div class="contact" id="phone">
+            <button class="butt" ><img src="img/fb.jpg"> </button>
+            <button class="butt"><img src="img/outlook.jpg"></button>
+            <button class="butt"><img src="img/phone.jpg"></button>
+            
+
+            </div>
+        </div>
+
+        <div class="footer">
+
+        <h4 style="color: white; font-size: 10pt;"> © 2025 Estravo.</h4>
+
+    </div>
+
+    
+    
+
+    <script src="op.js"></script> 
+
+    
+</body>
+</html>
